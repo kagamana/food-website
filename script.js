@@ -30,3 +30,37 @@ function fadeOut(){
 }
 
 window.onload = fadeOut();
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('#username').onchange = function () {
+      if (document.querySelector('#username').value.length > 8) {
+          document.querySelector('#checkuser').innerHTML = "";
+
+      } else {
+          document.querySelector('#checkuser').innerHTML = " Username larger than 8 characters ";
+      }
+  }
+  document.querySelector('#email').onchange = function () {
+      var email = document.querySelector("#email").value;
+      var checkemail = email.indexOf("@");
+      var checkmail = email.indexOf(".com");
+      if ((checkemail < 1) || (checkmail < 1)) {
+          document.querySelector("#checkemail").innerHTML = "Email notavailable (example@gmail.com)";
+          return false;
+      } else {
+          document.querySelector("#checkemail").innerHTML = "";
+      }
+  }
+  document.querySelector('#telephone').onchange = function () {
+    if (document.querySelector('#telephone').value.length == 10) {
+        document.querySelector('#checktel').innerHTML = "";
+
+    } else {
+        document.querySelector('#checktel').innerHTML = "Available phone number";
+    }
+}
+  document.querySelector('#submit').onclick = function () {
+      alert(`Đăng kí thành công !!!`);
+
+  };
+});

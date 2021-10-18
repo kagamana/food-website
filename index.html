@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOOD AND TRAVEL</title>
 
-    <link rel="icon" href="images/home-img.png"/>
+    <link rel="icon" href="images/home-img.png" />
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -214,7 +214,19 @@
                 </div>
                 <a href="#" class="btn">order now</a>
             </div>
-
+            <div class="box">
+                <span class="price"> $5 - $20 </span>
+                <img src="images/p-6.jpg" alt="">
+                <h3>cold ice-cream</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="#" class="btn">order now</a>
+            </div>
         </div>
 
     </section>
@@ -349,7 +361,7 @@
 
             <div class="box">
                 <img src="images/pic1.png" alt="">
-                <h3>john deo</h3>
+                <h3>Jennifer Aniston</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -362,7 +374,7 @@
             </div>
             <div class="box">
                 <img src="images/pic2.png" alt="">
-                <h3>john deo</h3>
+                <h3>Tom Hiddleston</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -375,6 +387,19 @@
             </div>
             <div class="box">
                 <img src="images/pic3.png" alt="">
+                <h3>Jennifer Lopez</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod
+                    ratione vel laboriosam? Est, maxime rem. Itaque.</p>
+            </div>
+            <div class="box">
+                <img src="images/pic4.png" alt="">
                 <h3>john deo</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -386,7 +411,6 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod
                     ratione vel laboriosam? Est, maxime rem. Itaque.</p>
             </div>
-
         </div>
 
     </section>
@@ -408,12 +432,14 @@
             <form action="">
 
                 <div class="inputBox">
-                    <input type="text" placeholder="name">
-                    <input type="email" placeholder="email">
+                    <input type="text" placeholder="name" id="username">
+                    <div id="checkuser"></div>
+                    <input type="email" placeholder="email" id="email">
+                    <div id="checkemail"></div>
                 </div>
-
                 <div class="inputBox">
-                    <input type="number" placeholder="number">
+                    <input type="tel" placeholder="telephone" id="telephone">
+                    <div id="checktel"></div>
                     <input type="text" placeholder="food name">
                 </div>
 
@@ -450,26 +476,6 @@
     <div class="loader-container">
         <img src="images/loader.gif" alt="">
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- custom js file link  -->
     <script src="script.js"></script>
 

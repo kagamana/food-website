@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 }
   document.querySelector('#submit').onclick = function () {
-      alert(`Đăng kí thành công !!!`);
+      alert(`Order Success`);
 
   };
 });

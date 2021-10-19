@@ -374,7 +374,7 @@ header .navbar a:hover{
 
 .review .box-container .box .stars i{
   font-size: 2rem;
-  color:var(--red);
+  color: gold;
   padding:.5rem 0;
 }
 
